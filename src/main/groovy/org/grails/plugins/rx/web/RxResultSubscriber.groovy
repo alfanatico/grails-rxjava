@@ -272,7 +272,7 @@ class RxResultSubscriber implements AsyncListener, Observer {
             }
             else if(!asyncComplete) {
                 if(e != null)  {
-                    log.error("Async Dispatch Error: ${e.message}", e)
+                    log.debug("Async Dispatch Error: ${e.message}", e)
                 }
                 else {
                     log.debug("Async timeout occurred")
